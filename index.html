@@ -1,211 +1,358 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>dreamの</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="Cache-Control" content="no-siteapp"/>
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
-    <link rel="stylesheet" href="media/css/index.css">
-    <link rel="stylesheet" href="media/live2d/css/live2d.css" />
-    
-    <style>
-        #centerbg{
-            background-image: url();
-        }
-    </style>
-</head>
-<body class=" mdui-loaded">
-<header class="mdui-toolbar mdui-color-theme mdui-appbar-fixed mdui-appbar-scroll-toolbar-hide" style="z-index: 1000">
-    <a href="javascript:;" mdui-drawer="{target: '#left-drawer',overlay:true}" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
-    <span class="mdui-typo-title">dreamの</span>
-    <div class="mdui-toolbar-spacer"></div>
-<!--    <a href="javascript:history.go(0);" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
-    <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">more_vert</i></a>
-</header>
-<div class="meteor">
-    <div class="red" style="left:600px;"></div>
-    <div class="orange" style="left:700px;"></div>
-    <div class="yellow" style="left:900px;"></div>
-    <div class="green" style="left:1100px;"></div>
-    <div class="cyan" style="left:1260px;"></div>
-    <div class="blue" style="left:1400px;"></div>
-    <div class="purple" style="left:1500px;"></div>
-    <div class="red" style="left:0px;"></div>
-    <div class="orange" style="left:100px;"></div>
-    <div class="yellow" style="left:300px;"></div>
-    <div class="green" style="left:500px;"></div>
-    <div class="cyan" style="left:660px;"></div>
-    <div class="blue" style="left:800px;"></div>
-    <div class="purple" style="left:900px;"></div>
-    <div class="red" style="left:1200px;"></div>
-    <div class="orange" style="left:1300px;"></div>
-    <div class="yellow" style="left:1500px;"></div>
-    <div class="green" style="left:1700px;"></div>
-    <div class="cyan" style="left:1860px;"></div>
-    <div class="blue" style="left:2000px;"></div>
-    <div class="purple" style="left:2100px;"></div>
-</div>
-<div class="mdui-drawer mdui-color-white mdui-drawer-full-height mdui-drawer-close" id="left-drawer">
-    <ul class="mdui-list">
-        <li class="mdui-subheader">菜单</li>
-        
-        <li class="mdui-list-item mdui-ripple">
-            <a href="https://w-dream-y.github.io/dream.github.io/" class="mdui-list-item-content">首页</a>
-        </li>
-        
-        <li class="mdui-list-item mdui-ripple">
-            <a href="https://w-dream-y.github.io/dream.github.io/archives" class="mdui-list-item-content">归档</a>
-        </li>
-        
-        <li class="mdui-list-item mdui-ripple">
-            <a href="https://w-dream-y.github.io/dream.github.io/tags" class="mdui-list-item-content">标签</a>
-        </li>
-        
-        <li class="mdui-list-item mdui-ripple">
-            <a href="https://w-dream-y.github.io/dream.github.io/post/about" class="mdui-list-item-content">关于</a>
-        </li>
-        
-    </ul>
-</div>
+<html>
 
-<div class="headertop filter-grid" style="height: auto">
-    <figure id="centerbg" class="centerbg" style="">
-        <div class="focusinfo">
-            <div class="header-tou">
-                <a href=">">
-                    <img src="/images/avatar.png">
+<head>
+    <meta charset="utf-8" />
+<title>
+    dreamの
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<meta name="author" content="请输入名字">
+<meta name="description" content="描述">
+<meta name="keywords" content="关键字">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://w-dream-y.github.io/dream.github.io//styles/main.css" />
+<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+        <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+        
+            <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://w-dream-y.github.io/dream.github.io/">
+                    dreamの
                 </a>
             </div>
-            <div class="header-info">
-                <p>温故而知新</p>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="https://w-dream-y.github.io/dream.github.io/">
+                        首页
+                    </a>
+                    
+                    <a class="menu-item" href="https://w-dream-y.github.io/dream.github.io/archives">
+                        归档
+                    </a>
+                    
+                    <a class="menu-item" href="https://w-dream-y.github.io/dream.github.io/tags">
+                        标签
+                    </a>
+                    
+                    <a class="menu-item" href="https://w-dream-y.github.io/dream.github.io/post/about">
+                        关于
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
             </div>
-            <div class="top-social">
-                
-                
-                
-                 
-                
-                
-                
-                
-
-            </div>
+            <form id="gridea-search-form" data-update="1606099067745" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
         </div>
-    </figure>
-</div>
-<div class="mdui-container">
-    <div class="mdui-row mdui-row-gapless">
-        <div class="k-container">
-            <div class="head_card-offset"></div>
-            <div class="head_card-offset"></div>
-            
-    <div class="mdui-card">
-        <div class="mdui-card-media">
-            <img src="https://w-dream-y.github.io/dream.github.io//post-images/xiao-xiao-bao-xian-ju.jpg"/>
-            <div class="mdui-card-media-covered">
-                <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">小小保险柜♥</div>
-                    <div class="mdui-card-primary-subtitle"></div>
-                </div>
-                <div class="mdui-card-actions" style="float:right;">
-                    <a href="https://w-dream-y.github.io/dream.github.io/post/xiao-xiao-bao-xian-ju/" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="head_card-offset"></div>
+    </nav>
 
-    <div class="mdui-card">
-        <div class="mdui-card-media">
-            <img src="https://w-dream-y.github.io/dream.github.io//post-images/111.jpg"/>
-            <div class="mdui-card-media-covered">
-                <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">999♥</div>
-                    <div class="mdui-card-primary-subtitle"></div>
-                </div>
-                <div class="mdui-card-actions" style="float:right;">
-                    <a href="https://w-dream-y.github.io/dream.github.io/post/111/" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="head_card-offset"></div>
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://w-dream-y.github.io/dream.github.io/">
+                            dreamの
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1606099067745" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
 
-    <div class="mdui-card">
-        <div class="mdui-card-media">
-            <img src="https://w-dream-y.github.io/dream.github.io//post-images/shou-ye.jpg"/>
-            <div class="mdui-card-media-covered">
-                <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">首页</div>
-                    <div class="mdui-card-primary-subtitle"></div>
                 </div>
-                <div class="mdui-card-actions" style="float:right;">
-                    <a href="https://w-dream-y.github.io/dream.github.io/post/shou-ye/" class="mdui-btn mdui-ripple mdui-ripple-white">点击查看</a>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="https://w-dream-y.github.io/dream.github.io/">
+                            首页
+                        </a>
+                        
+                        <a class="menu-item" href="https://w-dream-y.github.io/dream.github.io/archives">
+                            归档
+                        </a>
+                        
+                        <a class="menu-item" href="https://w-dream-y.github.io/dream.github.io/tags">
+                            标签
+                        </a>
+                        
+                        <a class="menu-item" href="https://w-dream-y.github.io/dream.github.io/post/about">
+                            关于
+                        </a>
+                        
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="head_card-offset"></div>
-
-
-        </div>
-    </div>
-    <div class="mdui-row">
-    </div>
-</div>
-<footer class="mdui-container footer ">
-    <div class="head_card-offset"></div>
-    <div class="mdui-row mdui-row-gapless">
-        <div class="k-container">
-            <img width="100%" src="/media/img/skirt.png">
-        </div>
-    </div>
-
-    <div class="site-info">
-        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-    </div>
-</footer>
-<div id="landlord" style="left:5px;bottom:0px;">
-    <div class="message" style="opacity:0"></div>
-    <canvas id="live2d" width="500" height="560" class="live2d"></canvas>
-    <div class="live_talk_input_body">
-        <div class="live_talk_input_name_body">
-            <input name="name" type="text" class="live_talk_name white_input" id="AIuserName" autocomplete="off" placeholder="你的名字" />
-        </div>
-        <div class="live_talk_input_text_body">
-            <input name="talk" type="text" class="live_talk_talk white_input" id="AIuserText" autocomplete="off" placeholder="要和我聊什么呀？"/>
-            <button type="button" class="live_talk_send_btn" id="talk_send">发送</button>
-        </div>
-    </div>
-    <input name="live_talk" id="live_talk" value="1" type="hidden" />
-    <div class="live_ico_box">
-        <div class="live_ico_item type_info" id="showInfoBtn"></div>
-        <div class="live_ico_item type_talk" id="showTalkBtn"></div>
-        <div class="live_ico_item type_music" id="musicButton"></div>
-        <div class="live_ico_item type_youdu" id="youduButton"></div>
-        <div class="live_ico_item type_quit" id="hideButton"></div>
-        <input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
-        <audio src="" style="display:none;" id="live2d_bgm" data-bgm="0" preload="none"></audio>
-        <input name="live2dBGM" value="https://img.apa70.com/123.mp3" type="hidden">
-        <input name="live2dBGM" value="https://img.apa70.com/123.mp3" type="hidden">
-        <input id="duType" value="douqilai,l2d_caihong" type="hidden">
-    </div>
-</div>
-<div id="open_live2d">召唤伊斯特瓦尔</div>
+        </nav>
+</header>
 <script>
-    var message_Path = '/media/live2d/';//资源目录，如果目录不对请更改
-    var talkAPI = "";//如果有类似图灵机器人的聊天接口请填写接口路径
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
 </script>
-<!--<script src="/media/js/jquery-3.3.1.min.js"></script>-->
-<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<script type="text/javascript" src="/media/live2d/js/live2d.js"></script>
-<script type="text/javascript" src="/media/live2d/js/message.js"></script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <div class="intro">
+                        <div class="avatar">
+                            <a href="https://w-dream-y.github.io/dream.github.io/"><img src="https://w-dream-y.github.io/dream.github.io//images/avatar.png?v=1606099067745"></a>
+                        </div>
+                        <div class="nickname">
+                            请输入名字
+                        </div>
+                        <div class="description">
+                            <span id="subtitle">
+                                描述
+                            </span>
+                        </div>
+                        <div class="links">
+                            
+                                
+                                        
+                                
+                                        
+                                
+                                        
+                                
+                                        
+                                
+                                        
+                                
+                                        
+                                
+                                        
+                                
+                                        
+                                
+                                        
+                                
+                                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
 
 </body>
-<script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
-<script src="media/js/index.js"></script>
+<script>
+    // type 
+    var typed = new Typed("#subtitle", {
+        strings: ['描述', '', ''],
+        startDelay: 10,
+        typeSpeed: 200,
+        loop: true,
+        backSpeed: 100,
+        showCursor: true
+    });
+    //head title
+    var titleTime;
+    document.addEventListener("visibilitychange", function() {
+        document.hidden ? (document.title = "\uD83D\uDE25" + OriginTitile, clearTimeout(titleTime)) : (document.title = "\uD83D\uDE1D" + OriginTitile, titleTime = setTimeout(function() {
+            document.title = OriginTitile
+        }, 2E3))
+    });
+    var OriginTitile = document.title;
+</script>
+
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        dreamの &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="https://coding.net" target="_blank">
+                                                Coding.net
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var musicList = [];
+                        
+                        musicList.push({
+                            name: '',
+                            url: '',
+                            artist: '',
+                            cover: '',
+                        });
+                        
+                        console.log(" MusicList: " + musicList);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: musicList
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1606099067745);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+
 </html>
